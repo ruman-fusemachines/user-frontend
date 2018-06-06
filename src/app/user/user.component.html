@@ -1,0 +1,57 @@
+
+<div class="table-responsive">
+
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Email</th>
+        <th>UserName</th>
+        
+      </tr>
+    </thead>
+    <tbody *ngFor="let user of users"  >
+      
+      <tr  >
+        
+        <td >{{user.firstName}}</td>
+        <td >{{user.lastName}}</td>
+        <td>{{user.email}}</td>
+        <td >{{user.userName}}</td>
+      
+        <td>
+          <span>
+            
+              <button type="button" class="btn btn-success" (click)="onAdd()" >
+                 Add
+                
+              </button>
+            </span><a>&nbsp;</a>
+            <span>
+            <button type="button" class="btn btn-primary"  >
+              Edit
+             
+           </button>
+         </span><a>&nbsp;</a>
+
+         <span>
+          <button type="button" class="btn btn-warning" (click)="onSelect(user)" >
+            Details
+           
+         </button>
+       </span><a>&nbsp;</a>
+       <span>
+       <button type="button" class="btn btn-danger" title="delete user"
+       (click)="delete(hero)">Delete</button>
+     </span><a>&nbsp;</a>
+     
+            
+        </td>
+        
+			
+      </tr>
+    </tbody>
+  </table>
+</div>

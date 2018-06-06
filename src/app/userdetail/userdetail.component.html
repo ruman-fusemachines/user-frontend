@@ -1,0 +1,10 @@
+<!-- <div>
+    {{user.firstName}}&nbsp;{{user.lastName}} &nbsp; Details : <br><br>
+</div> -->
+<div *ngIf="user" class="form-group">
+    <label for="firstName" class="form-control"><b>FirstName :</b> &nbsp;  {{user.firstName}} </label> <br/>
+    <label for="lastName" class="form-control"> <b>LastName :</b> &nbsp;{{user.lastName}} </label><br/>
+    <label for="email" class="form-control"><b>Email : </b>&nbsp;{{user.email}} </label><br/>
+    <label for="userName" class="form-control"><b>UserName : </b>&nbsp;{{user.userName}} </label>
+
+</div>
